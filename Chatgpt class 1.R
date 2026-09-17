@@ -52,8 +52,35 @@ example_matrix[3,1]
 example_matrix[2:4, 2:4]
 
 #MATRIX OPERATIONS
+example_matrix <- matrix(1:25, nrow = 5, ncol = 5)
+sum(example_matrix)
+min(example_matrix)
+max(example_matrix)
+mean(example_matrix)
+
 
 #SUBSETTING WITH LOGICAL MATRICES
-#prova se il pull funziona
+example_matrix <- matrix(1:25, nrow = 5, ncol = 5)
+example_matrix
+
+divisible_by_three <- example_matrix[example_matrix %% 3 == 0]
+two_digits <- divisible_by_three[divisible_by_three >=10]
+two_digits
 
 
+#WORKING WITH DATAFRAMES WITY DPLYR
+library(tidyverse)
+
+pop |>
+  filter(age == "25-29") |>
+  filter(period == "2005-2010")
+
+pop |>
+  filter(
+    age == "25-29",
+    period == "2005-2010"
+  )
+
+pop |>
+  filter(births > deaths) |>
+  arrange(desc(deaths))
