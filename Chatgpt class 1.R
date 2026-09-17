@@ -41,3 +41,19 @@ prices * 2
 prices +5
 more_prices <- c(50,60,70)
 all_prices <- c(prices, more_prices)
+
+#MATRICES
+example_matrix[2,]
+example_matrix[2,2]
+example_matrix[1,3]
+example_matrix[3,1]
+
+#SUBSETTING MATRICES
+example_matrix[2:4, 2:4]
+
+#MATRIX OPERATIONS
+
+#SUBSETTING WITH LOGICAL MATRICES
+#prova se il pull funziona
+
+
